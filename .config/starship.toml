@@ -1,0 +1,16 @@
+# Starship Configuration
+format = """$username@$hostname $directory$git_branch$git_status $character"""
+add_newline = false
+[directory]
+truncation_length = 3
+truncate_to_repo = false
+[directory.substitutions]
+"Documents" = "📄"
+"Downloads" = "📥"
+"Projects" = "🚀"
+[git_branch]
+symbol = "🌱 "
+[character]
+success_symbol = "[❯](bold green)"
+error_symbol = "[❯](bold red)"
+
